@@ -1,0 +1,7 @@
+=== COMEDY MOVIES ===
+
+movie1.jpg - Poor Things
+movie2.jpg - Barbie
+movie3.jpg - Mean Girls
+movie4.jpg - Wonka
+movie5.jpg - The Family Plan

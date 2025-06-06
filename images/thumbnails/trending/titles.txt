@@ -1,0 +1,7 @@
+=== TRENDING MOVIES ===
+
+movie1.jpg - Dune: Part Two
+movie2.jpg - Madame Web
+movie3.jpg - Anyone But You
+movie4.jpg - Argylle
+movie5.jpg - Migration

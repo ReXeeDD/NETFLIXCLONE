@@ -1,0 +1,200 @@
+.profile-container {
+    max-width: 1200px;
+    margin: 100px auto 0;
+    padding: 0 30px;
+    color: #fff;
+}
+
+.profile-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.profile-grid {
+    display: grid;
+    gap: 30px;
+}
+
+.profile-section {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 30px;
+    border: 1px solid #333;
+}
+
+.profile-section h2 {
+    color: #999;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Membership Styles */
+.membership-info {
+    display: grid;
+    gap: 30px;
+}
+
+.cancel-membership {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+.cancel-membership:hover {
+    background-color: #f40612;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-row a {
+    color: #0071eb;
+    text-decoration: none;
+}
+
+.detail-row a:hover {
+    text-decoration: underline;
+}
+
+/* Plan Details Styles */
+.current-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.plan-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.plan-info span {
+    color: #999;
+}
+
+.change-plan {
+    color: #0071eb;
+    text-decoration: none;
+}
+
+.change-plan:hover {
+    text-decoration: underline;
+}
+
+/* Profile Controls Styles */
+.profile-list {
+    display: grid;
+    gap: 20px;
+}
+
+.profile-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.profile-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile-details span {
+    color: #999;
+    font-size: 0.9em;
+}
+
+.manage-profile {
+    color: #0071eb;
+    text-decoration: none;
+}
+
+.manage-profile:hover {
+    text-decoration: underline;
+}
+
+/* Settings Styles */
+.settings-list {
+    display: grid;
+    gap: 10px;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.setting-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.setting-item i {
+    color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 0 15px;
+        margin-top: 80px;
+    }
+
+    .profile-item {
+        grid-template-columns: auto 1fr;
+    }
+
+    .manage-profile {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .current-plan {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+} 

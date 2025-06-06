@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="nav-logo">
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#" id="tv-shows">TV Shows</a></li>
+                    <li><a href="#" id="movies">Movies</a></li>
+                    <li><a href="#" id="new-popular">New & Popular</a></li>
+                    <li><a href="#" id="my-list">My List</a></li>
+                </ul>
+            </div>
+            <div class="nav-options">
+                <div class="search-box">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <input type="text" class="search-input" placeholder="Titles, people, genres">
+                </div>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-bell"></i>
+                </a>
+                <div class="profile-menu">
+                    <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABY20DrC9-11ewwAs6nfEgb1vrORxRPP9IGmlW1WtKuaLIz8VxCx5NryzDK3_ez064IsBGdXjVUT59G5IRuFdqZlCJCneepU.png?r=229" alt="Profile" class="profile-icon">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Banner -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1 class="banner-title">Title</h1>
+            <p class="banner-description">
+                Watch the latest movies and TV shows on Netflix. Stream now or download to watch offline.
+            </p>
+            <div class="banner-buttons">
+                <button class="play-button">
+                    <i class="fas fa-play"></i> Play
+                </button>
+                <button class="more-info-button">
+                    <i class="fas fa-info-circle"></i> More Info
+                </button>
+            </div>
+        </div>
+        <div class="banner-fadeBottom"></div>
+    </section>
+
+    <!-- Content Rows -->
+    <main class="main-content">
+        <section class="row">
+            <h2 class="row-header">Trending Now</h2>
+            <div class="row-posters" id="trending">
+                <img class="row-poster" src="images/thumbnails/trending/movie1.jpg" alt="Dune: Part Two" data-type="movie" data-id="1">
+                <img class="row-poster" src="images/thumbnails/trending/movie2.jpg" alt="Madame Web" data-type="movie" data-id="2">
+                <img class="row-poster" src="images/thumbnails/trending/movie3.jpg" alt="Anyone But You" data-type="movie" data-id="3">
+                <img class="row-poster" src="images/thumbnails/trending/movie4.jpg" alt="Argylle" data-type="movie" data-id="4">
+                <img class="row-poster" src="images/thumbnails/trending/movie5.jpg" alt="Migration" data-type="movie" data-id="5">
+            </div>
+        </section>
+
+
+
+        <section class="row">
+            <h2 class="row-header">Action Movies</h2>
+            <div class="row-posters" id="action">
+                <img class="row-poster" src="images/thumbnails/action/movie1.jpg" alt="Mission: Impossible - Dead Reckoning" data-type="movie" data-id="11">
+                <img class="row-poster" src="images/thumbnails/action/movie2.jpg" alt="The Beekeeper" data-type="movie" data-id="12">
+                <img class="row-poster" src="images/thumbnails/action/movie3.jpg" alt="Rebel Moon" data-type="movie" data-id="13">
+                <img class="row-poster" src="images/thumbnails/action/movie4.jpg" alt="The Equalizer 3" data-type="movie" data-id="14">
+                <img class="row-poster" src="images/thumbnails/action/movie5.jpg" alt="The Creator" data-type="movie" data-id="15">
+            </div>
+        </section>
+
+        <section class="row">
+            <h2 class="row-header">Comedy</h2>
+            <div class="row-posters" id="comedy">
+                <img class="row-poster" src="images/thumbnails/comedy/movie1.jpg" alt="Poor Things" data-type="movie" data-id="16">
+                <img class="row-poster" src="images/thumbnails/comedy/movie2.jpg" alt="Barbie" data-type="movie" data-id="17">
+                <img class="row-poster" src="images/thumbnails/comedy/movie3.jpg" alt="Mean Girls" data-type="movie" data-id="18">
+                <img class="row-poster" src="images/thumbnails/comedy/movie4.jpg" alt="Wonka" data-type="movie" data-id="19">
+                <img class="row-poster" src="images/thumbnails/comedy/movie5.jpg" alt="The Family Plan" data-type="movie" data-id="20">
+            </div>
+        </section>
+
+        <section class="row">
+            <h2 class="row-header">Horror</h2>
+            <div class="row-posters" id="horror">
+                <img class="row-poster" src="images/thumbnails/horror/movie1.jpg" alt="Night Swim" data-type="movie" data-id="21">
+                <img class="row-poster" src="images/thumbnails/horror/movie2.jpg" alt="Insidious: The Red Door" data-type="movie" data-id="22">
+                <img class="row-poster" src="images/thumbnails/horror/movie3.jpg" alt="Talk to Me" data-type="movie" data-id="23">
+                <img class="row-poster" src="images/thumbnails/horror/movie4.jpg" alt="M3GAN" data-type="movie" data-id="24">
+                <img class="row-poster" src="images/thumbnails/horror/movie5.jpg" alt="Evil Dead Rise" data-type="movie" data-id="25">
+            </div>
+        </section>
+
+        <section class="row">
+            <h2 class="row-header">Drama</h2>
+            <div class="row-posters" id="drama">
+                <img class="row-poster" src="images/thumbnails/drama/movie1.jpg" alt="Oppenheimer" data-type="movie" data-id="26">
+                <img class="row-poster" src="images/thumbnails/drama/movie2.jpg" alt="The Iron Claw" data-type="movie" data-id="27">
+                <img class="row-poster" src="images/thumbnails/drama/movie3.jpg" alt="Killers of the Flower Moon" data-type="movie" data-id="28">
+                <img class="row-poster" src="images/thumbnails/drama/movie4.jpg" alt="Napoleon" data-type="movie" data-id="29">
+                <img class="row-poster" src="images/thumbnails/drama/movie5.jpg" alt="The Color Purple" data-type="movie" data-id="30">
+            </div>
+        </section>
+    </main>
+
+    <!-- Movie Overview Modal -->
+    <div class="overlay"></div>
+    <div class="movie-overview">
+        <button class="close-overview">×</button>
+        <div class="movie-overview-content">
+            <div class="movie-poster">
+                <img src="" alt="Movie Poster">
+            </div>
+            <div class="movie-details">
+                <h2></h2>
+                <div class="movie-meta">
+                    <span class="release-date"></span>
+                    <span class="rating"></span>
+                    <span class="runtime"></span>
+                </div>
+                <p class="overview"></p>
+                <div class="genres"></div>
+                <div class="cast"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-links">
+                <div class="footer-row">
+                    <ul>
+                        <li><a href="#">Audio Description</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Legal Notices</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Cookie Preferences</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Corporate Information</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Media Center</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p class="copyright">© 2025 Netflix Clone</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

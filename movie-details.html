@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details - Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="movie-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header black-bg" id="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="nav-logo">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" id="tv-shows">TV Shows</a></li>
+                    <li><a href="#" id="movies">Movies</a></li>
+                    <li><a href="#" id="new-popular">New & Popular</a></li>
+                    <li><a href="#" id="my-list">My List</a></li>
+                </ul>
+            </div>
+            <div class="nav-options">
+                <div class="search-box">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <input type="text" class="search-input" placeholder="Titles, people, genres">
+                </div>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-bell"></i>
+                </a>
+                <div class="profile-menu">
+                    <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABY20DrC9-11ewwAs6nfEgb1vrORxRPP9IGmlW1WtKuaLIz8VxCx5NryzDK3_ez064IsBGdXjVUT59G5IRuFdqZlCJCneepU.png?r=229" alt="Profile" class="profile-icon">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Movie Details Content -->
+    <main class="movie-details-container">
+        <div class="movie-backdrop">
+            <div class="backdrop-image"></div>
+            <div class="backdrop-overlay"></div>
+        </div>
+        
+        <div class="movie-info">
+            <div class="movie-poster">
+                <img src="" alt="Movie Poster" id="movie-poster">
+            </div>
+            
+            <div class="movie-content">
+                <h1 class="movie-title"></h1>
+                <div class="movie-meta">
+                    <span class="release-year"></span>
+                    <span class="rating"></span>
+                    <span class="duration"></span>
+                    <span class="quality">HD</span>
+                </div>
+                
+                <div class="movie-actions">
+                    <button class="play-button">
+                        <i class="fas fa-play"></i> Play
+                    </button>
+                    <button class="add-list-button">
+                        <i class="fas fa-plus"></i> Add to My List
+                    </button>
+                    <button class="rate-button">
+                        <i class="fas fa-thumbs-up"></i> Rate
+                    </button>
+                </div>
+                
+                <div class="movie-description"></div>
+                
+                <div class="movie-details">
+                    <div class="cast">
+                        <strong>Cast:</strong>
+                        <span class="cast-list"></span>
+                    </div>
+                    <div class="genres">
+                        <strong>Genres:</strong>
+                        <span class="genre-list"></span>
+                    </div>
+                    <div class="director">
+                        <strong>Director:</strong>
+                        <span class="director-name"></span>
+                    </div>
+                </div>
+
+                <div class="reviews-section">
+                    <h3>Reviews</h3>
+                    <div class="reviews-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <section class="similar-movies">
+            <h2>More Like This</h2>
+            <div class="row-posters similar-posters"></div>
+        </section>
+    </main>
+
+    <script src="movie-details.js"></script>
+</body>
+</html> 

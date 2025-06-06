@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header black-bg" id="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="nav-logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Profile Content -->
+    <main class="profile-container">
+        <h1>Account</h1>
+        
+        <div class="profile-grid">
+            <!-- Membership & Billing -->
+            <section class="profile-section membership">
+                <h2>MEMBERSHIP & BILLING</h2>
+                <div class="membership-info">
+                    <button class="cancel-membership">Cancel Membership</button>
+                    
+                    <div class="billing-details">
+                        <div class="detail-row">
+                            <strong>user@example.com</strong>
+                            <a href="#" class="change-email">Change email</a>
+                        </div>
+                        <div class="detail-row">
+                            <span>Password: ********</span>
+                            <a href="#" class="change-password">Change password</a>
+                        </div>
+                        <div class="detail-row">
+                            <span>Phone: +911234567890</span>
+                            <a href="#" class="change-phone">Change phone number</a>
+                        </div>
+                    </div>
+
+                    <div class="payment-info">
+                        <div class="detail-row">
+                            <div>
+                                <strong>Payment Method:</strong>
+                                <span>Visa •••• 1234</span>
+                            </div>
+                            <a href="#" class="manage-payment">Manage payment info</a>
+                        </div>
+                        <div class="detail-row">
+                            <div>
+                                <strong>Billing Day:</strong>
+                                <span>15th of every month</span>
+                            </div>
+                            <a href="#" class="change-billing-day">Change billing day</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Plan Details -->
+            <section class="profile-section plan-details">
+                <h2>PLAN DETAILS</h2>
+                <div class="current-plan">
+                    <div class="plan-info">
+                        <strong>Premium</strong>
+                        <span>4K + HDR</span>
+                    </div>
+                    <a href="#" class="change-plan">Change plan</a>
+                </div>
+            </section>
+
+            <!-- Profile & Parental Controls -->
+            <section class="profile-section profile-controls">
+                <h2>PROFILE & PARENTAL CONTROLS</h2>
+                <div class="profile-list">
+                    <div class="profile-item">
+                        <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABY20DrC9-11ewwAs6nfEgb1vrORxRPP9IGmlW1WtKuaLIz8VxCx5NryzDK3_ez064IsBGdXjVUT59G5IRuFdqZlCJCneepU.png?r=229" alt="Profile 1">
+                        <div class="profile-details">
+                            <strong>Profile 1</strong>
+                            <span>All Maturity Ratings</span>
+                        </div>
+                        <a href="#" class="manage-profile">Manage profile</a>
+                    </div>
+                    <div class="profile-item">
+                        <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABbme8JMz4rEKFJhtzpOKWFJ_6qX-0y5wwWyYvBhWS0VKFLa289dZ5zvRBggmFVWVPL2AAYE8xevD4jjLZjWumNo.png?r=a41" alt="Profile 2">
+                        <div class="profile-details">
+                            <strong>Profile 2</strong>
+                            <span>All Maturity Ratings</span>
+                        </div>
+                        <a href="#" class="manage-profile">Manage profile</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Settings -->
+            <section class="profile-section settings">
+                <h2>SETTINGS</h2>
+                <div class="settings-list">
+                    <a href="#" class="setting-item">
+                        <span>Test participation</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="setting-item">
+                        <span>Manage download devices</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="setting-item">
+                        <span>Activate a device</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="setting-item">
+                        <span>Recent device streaming activity</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="setting-item">
+                        <span>Sign out of all devices</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <div class="footer-row">
+                    <ul>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Statement</a></li>
+                        <li><a href="#">Cookie Preferences</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html> 
